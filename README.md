@@ -21,3 +21,5 @@ $ bin/magento setup:upgrade
 $ bin/magento setup:static-content:deploy
 $ bin/magento cache:clean
 ```
+
+And it is usually necessary to delete the contents of the pub/static folder. So it's all created fresh.
