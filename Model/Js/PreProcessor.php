@@ -103,7 +103,7 @@ class PreProcessor implements PreProcessorInterface
     protected function i18nReplaceCallback($matches)
     {
         if(array_key_exists($matches[2], $this->data)){
-            return "text: '" . trim(json_encode(__($matches[2])),'"') . "'";
+            return "text: '" . substr(json_encode(__($matches[2])),1,-1) . "'";
         }
         else
             return $matches[0];
@@ -118,7 +118,7 @@ class PreProcessor implements PreProcessorInterface
     protected function replaceCallback($matches)
     {
         if(array_key_exists($matches[2], $this->data)){
-            return "'" . trim(json_encode(__($matches[2])),'"') . "'";
+            return "'" . substr(json_encode(__($matches[2])),1,-1) . "'";
         }
         else
             return $matches[0];
