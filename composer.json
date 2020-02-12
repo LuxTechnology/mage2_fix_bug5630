@@ -2,7 +2,7 @@
     "name": "luxtechnology/mage2_fix_bug5630",
     "description": "Fix embedded translations",
     "require": {
-        "php": "~5.5.0|~5.6.0|~7.0.0",
+        "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0",
         "magento/module-translation": "100.*"
     },
     "type": "magento2-module",
